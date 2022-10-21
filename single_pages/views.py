@@ -32,6 +32,7 @@ os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "True"
 
 from django.shortcuts import render
 from newsapi import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 from datetime import datetime, timedelta
 
 def cultureNews(request):
