@@ -27,7 +27,7 @@ import json
 import os
 import time
 from newsapi import NewsApiClient
-os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
+os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "True"
 
 
 from django.shortcuts import render
