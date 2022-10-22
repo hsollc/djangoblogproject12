@@ -25,8 +25,7 @@ def hsollc(request):
 import requests
 import json
 import os
-import time
-from newsapi import NewsApiClient
+
 os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "True"
 
 def art(request):
