@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+from django.conf.urls import include
+from django.urls import re_path
 
 urlpatterns = [
     path('search/<str:q>/', views.PostSearch.as_view()),
