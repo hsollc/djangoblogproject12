@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from django.urls import re_path as url
 
 
+
 urlpatterns = [
     path('single_pages/', include('single_pages.urls')),
     path('blog/', include('blog.urls')),
