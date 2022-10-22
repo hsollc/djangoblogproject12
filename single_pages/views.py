@@ -31,10 +31,10 @@ os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "True"
 
 
 from django.shortcuts import render
-from newsapi.newsapi_client import NewsApiClient
+from newsapi import NewsApiClient
 from datetime import datetime, timedelta
 
-def cultureNews(request):
+def cultureheadline(request):
     newsapi = NewsApiClient(api_key="c66416a0443445a896fe5e0eff1b1bc5")
     # topheadlines = newsapi.get_top_headlines(sources='bbc-news')
     now = datetime.now()
@@ -70,7 +70,7 @@ def cultureNews(request):
     mylist = zip(news, desc, img, url)
 
 
-    return render(request, 'single_pages/cultureNews.html', context={"mylist":mylist})
+    return render(request, 'single_pages/cultureheadline.html', context={"mylist":mylist})
 
 
 def art(request):
